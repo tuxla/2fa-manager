@@ -1,0 +1,95 @@
+@import '~antd/dist/antd.css';
+
+body{
+  background: url("https://vrhouse-web.oss-cn-shanghai.aliyuncs.com/shawn-test/bg.jpg");
+  background-size:100%;
+}
+
+.Container {
+  width: 70vw;
+  height: 70vh;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -230px;
+  margin-left: -35vw;
+  border-radius: 8px;
+  box-shadow: 0 10px 20px rgb(0 0 0 / 50%);
+  overflow: hidden;
+  z-index: 1;
+  padding: 50px;
+  box-sizing: border-box;
+}
+
+.Container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-filter: blur(20px);
+  -moz-filter: blur(20px);
+  -ms-filter: blur(20px);
+  -o-filter: blur(20px);
+  filter: blur(20px);
+  z-index: -1;
+  /*margin: -30px;*/
+  background-image: url("https://vrhouse-web.oss-cn-shanghai.aliyuncs.com/shawn-test/bg.jpg");
+  background-position: center top;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.card {
+  background: rgba(255,255,255,0.3);
+  height: 90%;
+}
+
+.code {
+  width: 100%;
+  height: 25vh;
+
+}
+
+.code .ant-typography {
+  line-height: 25vh;
+  font-size: 70px;
+  letter-spacing: 20px;
+  color: green;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
